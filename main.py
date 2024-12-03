@@ -9,7 +9,7 @@ print(ex_str, "\n\n\n-----------------------")
 
 # ------------------------------------------------------
 
-print("Check whether the string is Symmetrical or Palindrome\n\n")
+print("Exercise 2: Check whether the string is Symmetrical or Palindrome\n\n")
 
 print("Please enter a string when prompted.")
 
@@ -49,5 +49,28 @@ if(check_palindrome(userInput)):
 else:
     print("String is not palindrome")
 
+print("\n\n\n-----------------------")
+
+# ------------------------------------------------------
+
+print("Exercise 3: Write a Python program to count the number of characters (character frequency) in a string.\n\n")
+
+
+userInput = input("Please enter the string you'd like to apply the character count:\n").lower()
+
+# Store each character and number of occurrence in dict
+my_dict = {}
+
+
+for i in userInput:
+
+    # x will be the number of times a value is in the user input string
+    x = userInput.count(i)
+
+    # Store the character as key and number of occurrences as value
+    my_dict[i] = x
+
+
+print(my_dict)
 
 
